@@ -1,0 +1,124 @@
+.header__search-form-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  background-image: url("../../images/cellphone-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  width: 100%;
+  height: 576px;
+  opacity: 1;
+  overflow: hidden;
+}
+
+.header__search-form-wrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 0;
+}
+
+.header {
+  padding: 30px 104px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  z-index: 1;
+
+  width: 100%;
+  height: 80px;
+  box-sizing: border-box;
+
+  border-bottom: 1px #d1d2d6 solid;
+}
+
+.header__title {
+  margin: 0;
+
+  font-family: "Roboto Slab", "Times New Roman", Times, serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #ffffff;
+
+  cursor: pointer;
+}
+
+.header__link {
+  text-decoration: none;
+  list-style: none;
+}
+
+.header__saved-title-container {
+  padding: 0 104px;
+  z-index: 1;
+}
+
+.header__saved-title {
+  color: #1a1b22;
+  margin: 40px 0 28px 0;
+  width: 712px;
+  height: 24px;
+
+  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: #1a1b2280;
+}
+
+.header__total {
+  margin: 0 0 30px;
+  width: 530px;
+  height: 92px;
+
+  font-family: "Roboto Slab", "Times New Roman", Times, serif;
+  font-size: 40px;
+  line-height: 46px;
+}
+
+.header__keywords {
+  margin: 0 0 56px;
+  width: 712px;
+  height: 24px;
+
+  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.header__keywords--bold {
+  width: 712px;
+  height: 24px;
+
+  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.header--saved .header__title {
+  color: black;
+}
+
+@media screen and (max-width: 768px) {
+  .header-searchForm__wrapper {
+    height: 460px;
+  }
+
+  .header {
+    padding: 40px;
+    align-items: center;
+    height: 66px;
+  }
+}
